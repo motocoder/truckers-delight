@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TruckersDelight</string>
+    <string name="action_add">Add Item</string>
+    <string name="submit">Submit</string>
+    <string name="veggies">Veggies</string>
+    <string name="non_veggies">Non-Veggies</string>
+    <string name="is_veggie">Is Veggie?</string>
+    <string name="item_name">Item Name</string>
+    <string name="done">Done</string>
+    <string name="summary">Summary</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>
