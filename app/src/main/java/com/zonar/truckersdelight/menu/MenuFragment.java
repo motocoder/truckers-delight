@@ -92,7 +92,7 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                if(selected.size() == 0) {
+                if(mAdapter.getSelected().size() == 0) {
                     Toast.makeText(getContext(), "You must select at least one item", Toast.LENGTH_LONG).show();
                     return;
                 }
