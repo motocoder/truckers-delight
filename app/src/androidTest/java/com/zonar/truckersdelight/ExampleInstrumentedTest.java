@@ -32,15 +32,9 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.zonar.truckersdelight", appContext.getPackageName());
 
-        //create the dao object
-        MenuItemDatabase db =
-            Room.databaseBuilder(
-                appContext,
-                MenuItemDatabase.class,
-                "menu-items.db"
-            ).build();
+        assertTrue(appContext.getApplicationContext() instanceof DelightApplication);
 
-        final MenuItemDAO itemDAO = db.itemDAO();
+        final MenuItemDAO itemDAO = ((DelightApplication) appContext.getApplicationContext()).getItemDAO();
 
         {
 
